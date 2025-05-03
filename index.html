@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Lipschitz Pruning slides</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body id="body">
+
+
+
+
+        <section>
+            <header>
+                <span>Signed distance fields</span>
+            </header>
+            <p>Implicit surface repr used in video games and modeling applications</p>
+        </section>
+        <section>
+            <header><span>Signed distance fields</span></header>
+
+            <div style="display: flex;margin: 5%;">
+                <div style="flex: 1;text-align: center;">
+                    <div style="width: 85%; margin: auto;position:relative;">
+                        <img src="img/slisesix.png" style="width: 100%;aspect-ratio: 1; object-fit: cover;margin: auto;border-radius: 7%;"/>
+                        <p style="position: absolute; bottom: 2%; left: 0; color: white; width: 95%; padding: 0; text-align: right;font-size: 55%;"><em>Slisesix</em> by Inigo Quilez</p>
+                    </div>
+                    <p style="font-weight: 600; font-size: 110%;">Demoscene</p>
+                </div>
+                <div style="flex: 1;text-align: center;">
+                    <div style="width: 85%; margin: auto;position:relative;">
+                        <img src="img/Arts_Dream.png" style="width: 100%; aspect-ratio: 1; object-fit: cover;margin: auto;display: block;border-radius: 7%;"/>
+                        <p style="position: absolute; bottom: 2%; left: 0; color: white; width: 95%; padding: 0; text-align: right;font-size: 55%;"><em>Dreams</em> by Media Molecule</p>
+                    </div>
+                    <p style="font-weight: 600; font-size: 110%;">Video games</p>
+                </div>
+                <div style="flex: 1;">
+                    <div style="width: 85%;margin: auto; display: flex;margin-bottom: 1vw;">
+                        <img style="width: 80%;border-radius: 1vw;margin: auto;" src="img/neo.png"/>
+                        <img style="width: 15%; margin:auto;" src="img/project-neo.svg"/>
+                    </div>
+                    <div style="width: 85%; margin:auto;display: flex;">
+                        <img style="width: 80%;border-radius: 1vw; margin: auto;" src="img/modeler.png"/>
+                        <img style="width: 15%; margin: auto;" src="img/substance-3d-modeler-64.svg"/>
+                    </div>
+                    <p style="font-weight: 600; font-size: 110%;">Modeling software</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <header><span>Signed distance fields</span></header>
+
+            <p style="text-align: center;font-weight: 700; padding-bottom: 0">1-Lipschitz SDF</p>
+            <span style="position: relative; left: 30%;top: 5%;">\(f = 0\)</span>
+            <div style="width: 100%; display: flex; justify-content: center; margin-top: 0%">
+                <img src="bunny_color.png" style="width: 40%;"/>
+            </div>
+        </section>
+        <section>
+            <header>
+                <span>Lipschitz Pruning</span>
+            </header>
+            <p>Coucou</p>
+        </section>
+    </body onclick="click();">
+    <script>
+        let slidenum = 0;
+
+        function updateScroll() {
+            window.scrollTo(0, slidenum*window.innerHeight);
+        }
+
+        let num_slides = document.getElementsByTagName('section').length;
+
+        let el = document.getElementById('body');
+        body.addEventListener('click', () => {
+            if (slidenum < num_slides-1) slidenum++;
+            updateScroll();
+        });
+        body.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowLeft') {
+                if (slidenum > 0) slidenum--;
+                updateScroll();
+            }
+            if (event.key == 'ArrowRight') {
+                if (slidenum < num_slides-1) slidenum++;
+                updateScroll();
+            }
+        });
+    </script>
+
+
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</html>
