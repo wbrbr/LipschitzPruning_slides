@@ -68,7 +68,7 @@
         let slidenum = 0;
 
         function updateScroll() {
-            window.scrollTo(0, slidenum*window.innerHeight);
+            window.scrollTo(0, document.getElementsByTagName('section')[slidenum].offsetTop);
         }
 
         let num_slides = document.getElementsByTagName('section').length;
