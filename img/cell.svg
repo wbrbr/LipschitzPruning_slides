@@ -2,12 +2,12 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="101.008mm"
+   height="101.008mm"
+   viewBox="0 0 101.008 101.008"
    version="1.1"
    id="svg1"
-   inkscape:version="1.4.1 (93de688d07, 2025-03-30)"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    sodipodi:docname="cell.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,21 +25,23 @@
      inkscape:document-units="mm"
      showguides="true"
      inkscape:zoom="1.4805976"
-     inkscape:cx="282.65613"
-     inkscape:cy="275.2267"
-     inkscape:window-width="1918"
-     inkscape:window-height="1042"
-     inkscape:window-x="0"
-     inkscape:window-y="18"
+     inkscape:cx="267.45957"
+     inkscape:cy="192.82754"
+     inkscape:window-width="1850"
+     inkscape:window-height="1016"
+     inkscape:window-x="70"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1">
+     inkscape:current-layer="layer1"
+     inkscape:pageshadow="2"
+     showgrid="false">
     <sodipodi:guide
-       position="91.884822,250.12988"
+       position="50.520594,87.618535"
        orientation="1,0"
        id="guide1"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="29.875342,213.06266"
+       position="-11.488882,50.551317"
        orientation="0,-1"
        id="guide2"
        inkscape:locked="false" />
@@ -47,8 +49,8 @@
   <defs
      id="defs1">
     <rect
-       x="197.24137"
-       y="328.09883"
+       x="197.24136"
+       y="328.09882"
        width="219.21014"
        height="189.12247"
        id="rect3" />
@@ -59,8 +61,8 @@
        refY="0"
        orient="auto-start-reverse"
        inkscape:stockid="Triangle arrow"
-       markerWidth="0.6"
-       markerHeight="0.6"
+       markerWidth="0.60000002"
+       markerHeight="0.60000002"
        viewBox="0 0 1 1"
        inkscape:isstock="true"
        inkscape:collect="always"
@@ -81,7 +83,8 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-41.364225,-33.480657)">
     <rect
        style="fill:none;stroke:#000000;stroke-width:1.008;stroke-dasharray:2.016, 2.016;stroke-dashoffset:0;stroke-opacity:1"
        id="rect1"
@@ -96,28 +99,28 @@
        cy="83.951889"
        r="1.5" />
     <path
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.008;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Triangle);marker-start:url(#Triangle)"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.008;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Triangle);marker-end:url(#Triangle)"
        d="M 95.781059,80.11239 138.2381,37.655351"
        id="path3" />
-    <text
-       xml:space="preserve"
+    <g
+       aria-label="p"
        transform="matrix(0.26458333,0,0,0.26458333,32.890485,-4.7861727)"
        id="text3"
-       style="font-size:42.6667px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect3);fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.80976;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><tspan
-         x="197.24219"
-         y="366.89262"
-         id="tspan4"><tspan
-           style="font-weight:bold;font-family:'Linux Biolinum O';-inkscape-font-specification:'Linux Biolinum O';fill:#000000;stroke:none"
-           id="tspan1">p</tspan></tspan></text>
-    <text
-       xml:space="preserve"
+       style="font-size:42.6667px;white-space:pre;shape-inside:url(#rect3);fill:none;stroke:#000000;stroke-width:3.80976">
+      <path
+         d="m 206.28753,354.86061 c 0.93866,-2.26133 3.328,-3.712 4.77867,-3.712 2.60267,0 3.28533,2.77333 3.28533,6.86934 0,4.56533 -1.87733,7.168 -4.26667,7.168 -1.06666,0 -2.21866,-0.21333 -3.79733,-1.536 z m 0.17066,-3.24267 -0.21333,-0.128 c 0,-0.93866 -0.0427,-2.34667 -0.0853,-2.73067 -0.0853,-0.256 -0.128,-0.42666 -0.384,-0.42666 -1.23734,0.21333 -4.01067,0.21333 -5.50401,0.128 l -0.0853,0.128 c 0.29867,1.83467 0.46933,5.12 0.46933,8.27734 v 11.39201 c 0,3.2 -0.0853,6.272 -0.42666,8.53333 l 0.0427,0.128 c 0,0 1.664,-0.128 3.15734,-0.128 1.45067,0 3.2,0.128 3.2,0.128 l 0.0853,-0.128 c -0.384,-2.432 -0.42666,-5.33333 -0.42666,-8.53333 v -2.13334 c 1.408,0.896 2.98667,1.19467 4.56533,1.19467 5.37601,0 9.55734,-4.43734 9.55734,-10.45334 0,-3.15734 -0.98133,-5.54667 -3.02933,-7.29601 -0.98133,-0.85333 -2.47467,-1.408 -4.30934,-1.408 -1.83467,0 -4.52267,0.59733 -6.61334,3.456 z"
+         style="font-weight:bold;font-family:'Linux Biolinum O';-inkscape-font-specification:'Linux Biolinum O';fill:#000000;stroke:none"
+         id="path845" />
+    </g>
+    <g
+       aria-label="R"
        transform="matrix(0.26458333,0,0,0.26458333,54.926997,-41.611771)"
        id="text3-0"
-       style="font-size:42.6667px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect3-3);fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.80976;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><tspan
-         x="197.24219"
-         y="366.89262"
-         id="tspan6"><tspan
-           style="font-family:'Linux Biolinum O';-inkscape-font-specification:'Linux Biolinum O';fill:#000000;stroke:none"
-           id="tspan5">R</tspan></tspan></text>
+       style="font-size:42.6667px;white-space:pre;shape-inside:url(#rect3-3);fill:none;stroke:#000000;stroke-width:3.80976">
+      <path
+         d="m 205.34886,354.68994 c 1.49333,0 2.77334,-0.0427 3.92534,-0.128 1.19466,1.40801 2.13333,3.07201 3.24267,4.82134 1.536,2.47467 3.584,6.18667 4.05333,7.63734 0.81067,-0.128 1.74934,-0.128 2.56,-0.128 0.85334,0 1.70667,0 2.56001,0.128 l 0.0853,-0.128 c -2.13334,-2.38933 -6.44267,-9.13067 -9.13067,-12.75734 1.152,-0.21334 2.00533,-0.46934 2.60266,-0.81067 2.30401,-1.152 4.26667,-3.37067 4.26667,-6.86934 0,-2.13333 -0.72533,-3.88267 -2.26133,-5.33334 -2.048,-1.92 -5.29067,-2.048 -7.97867,-2.048 -1.06667,0 -4.48001,0.29867 -5.76001,0.29867 -0.512,0 -1.664,-0.0427 -2.176,-0.128 l -0.0853,0.128 c 0.34133,2.432 0.42666,5.33334 0.42666,8.53334 v 10.45334 c 0,3.2 -0.0853,6.22934 -0.42666,8.53334 l 0.0853,0.128 c 0.512,-0.0853 1.664,-0.128 2.176,-0.128 0.512,0 1.664,0.0427 2.176,0.128 l 0.0853,-0.128 c -0.34134,-2.432 -0.42667,-5.33334 -0.42667,-8.53334 z m 3.968,-13.78134 c 2.60267,0 6.10134,0.98134 6.10134,5.58934 0,5.20534 -3.456,6.48534 -7.59467,6.48534 h -2.47467 v -10.19734 c 0,-1.66401 0.128,-1.87734 3.968,-1.87734 z"
+         style="font-family:'Linux Biolinum O';-inkscape-font-specification:'Linux Biolinum O';fill:#000000;stroke:none"
+         id="path842" />
+    </g>
   </g>
 </svg>

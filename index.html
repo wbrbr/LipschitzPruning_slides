@@ -7,16 +7,6 @@
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body id="body">
-
-
-
-
-        <section>
-            <header>
-                <span>Signed distance fields</span>
-            </header>
-            <p>Implicit surface repr used in video games and modeling applications</p>
-        </section>
         <section>
             <header><span>Signed distance fields</span></header>
 
@@ -224,7 +214,7 @@
                     <path d="M 130 10 q 20 -20 40 0" stroke="black" stroke-width="1" marker-end="url(#arrow)" fill="transparent"/>
                 </svg>
 
-                <div style="display: flex;margin-top: 5%;">
+                <div style="display: flex;margin: 5%;">
                     <div style="flex: 1;">
                         <img src="img/csg_tree.png" style="width: 100%; margin: auto;"/>
                         <p style="font-weight: 700;text-align: center;">Smooth CSG tree</p>
@@ -407,7 +397,7 @@
 
             <p>\({\rm U{\small nion}}(f_1, f_2, k) = \min(f_1,f_2) - \underbrace{\phi(\lvert f_1-f_2 \rvert, k)}_{0 \text{ when } \lvert f_1-f_2 \rvert > k}\)</p>
             <p>How to know if \(\lvert f_1-f_2 \rvert > k\) within the cell? <b>Use the Lipschitz bound!</b></p>
-            <img src="img/cell.svg" style="position: absolute; top: 40%; left: 65%;width: 40%;"/>
+            <img src="img/cell.svg" style="position: absolute; top: 50%; left: 75%;width: 20%;"/>
         </section>
         <section style="position: relative;">
             <header><span>Lipschitz Pruning</span></header>
@@ -416,7 +406,7 @@
             <p>How to know if \(\lvert f_1-f_2 \rvert > k\) within the cell? <b>Use the Lipschitz bound!</b></p>
             <!--<p>If \(\lvert f_1(\mathbf{p}) - f_2(\mathbf{p}) \rvert > k+2R\), then \(\lvert f_1-f_2\rvert > k\)</p>-->
             <p>Sufficient condition using \(\lVert \nabla f_1 \rVert, \lVert \nabla f_2 \rVert \le 1\): \[\lvert f_1(\mathbf{p}) - f_2(\mathbf{p}) \rvert > k+2R\]</p>
-            <img src="img/cell.svg" style="position: absolute; top: 40%; left: 65%;width: 40%;"/>
+            <img src="img/cell.svg" style="position: absolute; top: 50%; left: 75%;width: 20%;"/>
         </section>
         <section style="position: relative;">
             <header><span>Lipschitz Pruning</span></header>
@@ -425,7 +415,7 @@
             <p>How to know if \(\lvert f_1-f_2 \rvert > k\) within the cell? <b>Use the Lipschitz bound!</b></p>
             <!--<p>If \(\lvert f_1(\mathbf{p}) - f_2(\mathbf{p}) \rvert > k+2R\), then \(\lvert f_1-f_2\rvert > k\)</p>-->
             <p>Sufficient condition using \(\lVert \nabla f_1 \rVert, \lVert \nabla f_2 \rVert \le 1\): \[\lvert f_1(\mathbf{p}) - f_2(\mathbf{p}) \rvert > k+2R\]</p>
-            <img src="img/cell.svg" style="position: absolute; top: 40%; left: 65%;width: 40%;"/>
+            <img src="img/cell.svg" style="position: absolute; top: 50%; left: 75%;width: 20%;"/>
             <p><b>Conservative</b> criterion using a <b>single</b> evaluation</p>
         </section>
         <section>
