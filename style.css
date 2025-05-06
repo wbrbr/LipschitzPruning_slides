@@ -20,6 +20,7 @@ section {
     font-style: normal;
     font-optical-sizing: auto;
     font-size: min(4vh, 2.25vw);
+    position: relative;
 }
 
 section th {
@@ -62,4 +63,11 @@ li.biglist::marker {
     font-size: 150%;
     margin-top: 10%;
     color: rgba(170, 255, 168, 0.87);
+}
+
+.slidenum {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 75%;
 }

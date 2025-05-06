@@ -41,10 +41,11 @@
                 </div>
             </div>
         </section>
-        <!--<section>
+        <section>
             <header><span>Signed distance fields</span></header>
 
-            <div style="display: flex;margin: 5%;">
+            <p>SDFs are a surface representation used in...</p>
+            <div style="display: flex;margin-left: 5%; margin-right: 5%;">
                 <div style="flex: 1;text-align: center;">
                     <div style="width: 85%; margin: auto;position:relative;">
                         <img src="img/slisesix.png" style="width: 100%;aspect-ratio: 1; object-fit: cover;margin: auto;border-radius: 7%;"/>
@@ -71,7 +72,7 @@
                     <p style="font-weight: 600; font-size: 110%;">Modeling software</p>
                 </div>
             </div>
-        </section>-->
+        </section>
         <section style="position: relative">
             <header><span>1-Lipschitz SDF</span></header>
             <div style="display: flex;width: 100%;">
@@ -144,6 +145,19 @@
         <section>
             <header><span>Boolean operations</span></header>
 
+            <svg viewBox="0 0 300 100" style="display: inline;position: absolute; width: 100%; height: 100%;">
+                <defs>
+                    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+                        orient="auto-start-reverse">
+                        <path d="M 0 0 L 10 5 L 0 10 z" />
+                    </marker>
+                </defs>
+            
+                <path d="M 153 70 q 0 10 -10 10" stroke="black" stroke-width="0.5" marker-end="url(#arrow)" fill="transparent"/>
+                <path d="M 181 70 q 0 10 10 10" stroke="black" stroke-width="0.5" marker-end="url(#arrow)" fill="transparent"/>
+            </svg>
+            <span style="position: absolute; bottom: 14%; left: 40%;font-size: 65%;text-align: center;font-weight: 600;">blending<br/>kernel</span>
+            <span style="position: absolute; bottom: 14%; left: 64.5%;font-size: 65%;text-align: center;font-weight: 600;">blending<br/>radius</span>
             <div style="display: flex;">
                 <div style="flex: 1;">
                     <p style="font-weight: 600;text-align: center;">Union</p>
@@ -615,7 +629,7 @@
             </script>
         </section>
         <section>
-            <header><span>Results: speedup</span></header>
+            <header><span>Results: sphere tracing speedup</span></header>
             <div>
                 <br/>
                 <img src="img/results_speedup.png" style="display:block; width: 70%; margin: auto;"/>
@@ -651,6 +665,14 @@
                 updateScroll();
             }
         });
+
+        slides = document.getElementsByTagName('section');
+        for (let i = 1; i < slides.length; i++) {
+            let footnote = document.createElement('span');
+            footnote.textContent = i.toString() + '/' + (num_slides-1).toString();
+            footnote.className = 'slidenum'
+            slides[i].appendChild(footnote);
+        }
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </html>
