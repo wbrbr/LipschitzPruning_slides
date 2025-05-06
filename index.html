@@ -41,7 +41,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <!--<section>
             <header><span>Signed distance fields</span></header>
 
             <div style="display: flex;margin: 5%;">
@@ -71,89 +71,51 @@
                     <p style="font-weight: 600; font-size: 110%;">Modeling software</p>
                 </div>
             </div>
-        </section>
-        <section style="position: relative;">
-            <!-- TODO: SDF taxonomy: implicit function / lower-bound SDF / 1-Lipschitz SDF / Exact SDF-->
-            <header><span>Signed distance fields</span></header>
-
-            <p style="text-align: center;font-weight: 700; padding-bottom: 0">1-Lipschitz SDF</p>
-            <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" style="display: inline;position: absolute; width: 100%; height: 100%;">
-                <defs>
-                    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
-                        orient="auto-start-reverse">
-                        <path d="M 0 0 L 10 5 L 0 10 z" />
-                    </marker>
-                </defs>
-            
-                <!-- <line x1="100" y1="-20" x2="123" y2="0" stroke="black" stroke-width="0.5" marker-end="url(#arrow)" />-->
-                 <path d="M 141 -29 q 10 0 10 13" stroke="black" stroke-width="0.5" marker-end="url(#arrow)" fill="transparent"/>
-            
-                <!--<path d="M 110 10
-                   C 120 20, 130 20, 140 10
-                   C 150 0, 160 0, 170 10
-                   C 180 20, 190 20, 200 10" stroke="black" fill="none" marker-start="url(#arrow)" marker-mid="url(#arrow)"
-                    marker-end="url(#arrow)" />-->
-            </svg>
-            <span style="position: absolute; left: 40%;top: 25%;">\(f = 0\)</span>
-            <span style="position: absolute; left: 30%;top: 50%;">\(f > 0\)</span>
-            <span style="position: absolute; left: 48%;top: 60%;">\(f < 0\)</span>
-            <div style="width: 100%; display: flex; justify-content: center; margin-top: 0%">
-                <img src="bunny_color.png" style="width: 40%;"/>
-            </div>
-
-        </section>
-        <section style="position: relative;">
-            <header><span>Signed distance fields</span></header>
-
-            <p style="text-align: center;font-weight: 700; padding-bottom: 0">1-Lipschitz SDF</p>
-            <span style="position: absolute; left: 10%;top: 35%;">\(\lVert \nabla f \rVert \le 1\)</span>
-            <div style="width: 100%; display: flex; justify-content: center; margin-top: 0%">
-                <img src="bunny_color.png" style="width: 40%;"/>
+        </section>-->
+        <section style="position: relative">
+            <header><span>1-Lipschitz SDF</span></header>
+            <div style="display: flex;width: 100%;">
+                <div style="flex: 1;">
+                    <p style="font-weight: 700;text-align: center;">Taxonomy</p>
+                    <br/>
+                    <img src="img/taxonomy_0.svg" style="width: 70%;display: block;margin: auto;"/>
+                </div>
+                <div style="flex: 1;">
+                    <br/>
+                    <img src="img/bunny_0.svg" style="width: 80%; display: block; margin: auto;"/>
+                </div>
             </div>
         </section>
-        <section style="position: relative;">
-            <header><span>Signed distance fields</span></header>
-
-            <p style="text-align: center;font-weight: 700; padding-bottom: 0">1-Lipschitz SDF</p>
-            <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" style="display: inline;position: absolute; width: 100%; height: 100%;">
-                <defs>
-                    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
-                        orient="auto-start-reverse">
-                        <path d="M 0 0 L 10 5 L 0 10 z" />
-                    </marker>
-                </defs>
-                <circle cx="102" cy="30" r="1" fill="black" stroke="transparent" stroke-width="0.5"/>
-            </svg>
-            <span style="position: absolute; left: 10%;top: 35%;">\(\lVert \nabla f \rVert \le 1\)</span>
-            <span style="position: absolute; left: 35%; top: 63%; font-size: 75%;">\(\mathbf{p}\)</span>
-            <div style="width: 100%; display: flex; justify-content: center; margin-top: 0%">
-                <img src="bunny_color.png" style="width: 40%;"/>
+        <section style="position: relative">
+            <header><span>1-Lipschitz SDF</span></header>
+            <div style="display: flex;width: 100%;">
+                <div style="flex: 1;">
+                    <p style="font-weight: 700;text-align: center;">Taxonomy</p>
+                    <br/>
+                    <img src="img/taxonomy_1.svg" style="width: 70%;display: block;margin: auto;"/>
+                </div>
+                <div style="flex: 1;">
+                    <br/>
+                    <img src="img/bunny_1.svg" style="width: 80%; display: block; margin: auto;"/>
+                </div>
             </div>
         </section>
-        <section style="position: relative;">
-            <header><span>Signed distance fields</span></header>
-
-            <p style="text-align: center;font-weight: 700; padding-bottom: 0">1-Lipschitz SDF</p>
-            <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" style="display: inline;position: absolute; width: 100%; height: 100%;">
-                <defs>
-                    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
-                        orient="auto-start-reverse">
-                        <path d="M 0 0 L 10 5 L 0 10 z" />
-                    </marker>
-                </defs>
-                <line x1="100" y1="28" x2="92" y2="22" stroke="black" marker-end="url(#arrow)" marker-start="url(#arrow)" stroke-width="0.5"/>
-                <circle cx="102" cy="30" r="15" fill="transparent" stroke="black" stroke-width="0.5"/>
-                <circle cx="102" cy="30" r="1" fill="black" stroke="transparent" stroke-width="0.5"/>
-            </svg>
-            <span style="position: absolute; left: 10%;top: 35%;">\(\lVert \nabla f \rVert \le 1\)</span>
-            <span style="position: absolute; left: 35%; top: 63%; font-size: 75%;">\(\mathbf{p}\)</span>
-            <span style="position: absolute; left: 32%; top: 55%; font-size: 75%;">\(f(\mathbf{p})\)</span>
-            <div style="width: 100%; display: flex; justify-content: center; margin-top: 0%">
-                <img src="bunny_color.png" style="width: 40%;"/>
+        <section style="position: relative">
+            <header><span>1-Lipschitz SDF</span></header>
+            <div style="display: flex;width: 100%;">
+                <div style="flex: 1;">
+                    <p style="font-weight: 700;text-align: center;">Taxonomy</p>
+                    <br/>
+                    <img src="img/taxonomy_2.svg" style="width: 70%;display: block;margin: auto;"/>
+                </div>
+                <div style="flex: 1;">
+                    <br/>
+                    <img src="img/bunny_1.svg" style="width: 80%; display: block; margin: auto;"/>
+                </div>
             </div>
         </section>
         <section>
-            <header><span>Signed distance fields</span></header>
+            <header><span>Boolean operations</span></header>
 
             <div style="display: flex;">
                 <div style="flex: 1;">
@@ -180,7 +142,7 @@
             </div>
         </section>
         <section>
-            <header><span>Signed distance fields</span></header>
+            <header><span>Boolean operations</span></header>
 
             <div style="display: flex;">
                 <div style="flex: 1;">
@@ -207,7 +169,7 @@
             </div>
         </section>
         <section>
-            <header><span>Signed distance fields</span></header>
+            <header><span>Boolean operations</span></header>
 
             <div style="display: flex;">
                 <div style="flex: 1;">
@@ -551,7 +513,7 @@
             <p>Replace <b>pruned tree</b> with a <b>lower-bound distance</b> when far from the surface.</p>
             <ul style='list-style-type: "⤷"; margin-top: 0; margin-left: 3%;'>
                 <li style="padding: 0.2em;">No evaluation cost, smaller memory usage (1 float)</li>
-                <li style="padding: 0.2em;">Conservative approximation 🡒 valid lower-bound SDF</li>
+                <li style="padding: 0.2em;">Conservative approximation <img src='img/arrow.svg' style='width: 2em;padding-bottom: 0.1em;'/> valid lower-bound SDF</li>
                 <li style="padding: 0.2em;">Loss of continuity: task-specific impact</li>
             </ul>
             <br/>
@@ -572,7 +534,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section style="position: relative;">
             <header><span>Results: pruning speed</span></header>
             <p>We measure <b>pruning time</b> and <b>sphere-tracing time</b> on a laptop RTX 4060.<br/>
             Pruning is recomputed every frame from scratch.</p>
@@ -582,14 +544,87 @@
             <p><b>Baseline:</b><br/>
                 <span style="margin-left: 1em;">Tracing time: 9.4 seconds</span>
             </p>
-            <p>TODO video</p>
+            <div style="position: absolute;left: 50%; top: 40%;width: 40%;">
+                <video style="width: 100%;" autoplay loop muted id="pruning-vid">
+                    <source src="LipschitzPruningVideo.mp4#t=7" type="video/mp4"/>
+                </video>
+            </div>
+            <script>
+                let elem = document.getElementById('pruning-vid');
+                elem.addEventListener('timeupdate', () => {
+                    if (elem.currentTime >= 17) {
+                        elem.currentTime = 7;
+                    }
+                });
+            </script>
         </section>
         <section>
             <header><span>Results: pruning effectiveness</span></header>
-            <p></p>
+            <div style="display:grid;width: 100%; height: 83%;grid-template-columns: 50% 50%; grid-template-rows: 50% 50%;margin-top: 1%;">
+                <div style="grid-column: 1 / 1; grid-row: 1 / 1;">
+                    <video style="width: 80%;display: block;margin:auto;" autoplay muted id="vid0">
+                        <source src="LipschitzPruningVideo.mp4#t=62" type="video/mp4"/>
+                    </video>
+                </div>
+
+                <div style="grid-column: 2 / 2; grid-row: 1 / 1;">
+                    <video style="width: 80%;margin:auto;display:block;" autoplay muted id="vid1">
+                        <source src="LipschitzPruningVideo.mp4#t=75" type="video/mp4"/>
+                    </video>
+                </div>
+
+                <div style="grid-column: 1 / 1; grid-row: 2/2;">
+                    <video style="width: 80%;margin:auto;display:block;" autoplay muted id="vid2">
+                        <source src="LipschitzPruningVideo.mp4#t=86" type="video/mp4"/>
+                    </video>
+                </div>
+
+                <div style="grid-column: 2/2; grid-row: 2/2;">
+                    <video style="width: 80%;margin:auto;display:block;" autoplay muted id="vid3">
+                        <source src="LipschitzPruningVideo.mp4#t=97" type="video/mp4"/>
+                    </video>
+                </div>
+            </div>
+            <script>
+                let vid0 = document.getElementById('vid0');
+                let vid1 = document.getElementById('vid1');
+                let vid2 = document.getElementById('vid2');
+                let vid3 = document.getElementById('vid3');
+
+                vid0.addEventListener('timeupdate', () => {
+                    console.log(vid0.currentTime);
+                    if (vid0.currentTime >= 70) {
+                        vid0.currentTime = 62;
+                    }
+                });
+                vid1.addEventListener('timeupdate', () => {
+                    if (vid1.currentTime >= 82) {
+                        vid1.currentTime = 75;
+                    }
+                });
+                vid2.addEventListener('timeupdate', () => {
+                    if (vid2.currentTime >= 93) {
+                        vid2.currentTime = 86;
+                    }
+                });
+                vid3.addEventListener('timeupdate', () => {
+                    if (vid3.currentTime >= 104) {
+                        vid3.currentTime = 97;
+                    }
+                });
+            </script>
         </section>
         <section>
             <header><span>Results: speedup</span></header>
+            <div>
+                <br/>
+                <img src="img/results_speedup.png" style="display:block; width: 70%; margin: auto;"/>
+            </div>
+        </section>
+        <section>
+            <div style="width: 100%; height: 100%;display: flex;align-items: center;justify-content: center;">
+                <div style="text-align: center; font-size: 250%; font-weight: 700;vertical-align: center;background-color: #c9daf8;padding: 2%;">Thank you</div>
+            </div>
         </section>
     </body onclick="click();">
     <script>
