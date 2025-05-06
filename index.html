@@ -31,7 +31,7 @@
             <br/>
             <div style="display: flex;width: 100%;align-items: center;">
                 <div style="flex:1;">
-                    <img src="img/Adobe_Corporate_Logo.png" style="display: block;width: 60%; vertical-align: middle; margin: auto"/>
+                    <img src="img/Adobe_Corporate_Logo.png" style="display: block;width: 60%; margin: auto"/>
                 </div>
                 <div style="flex:1;">
                     <p style="font-size: 75%;text-align: center;">* equal contribution</p>
@@ -73,6 +73,7 @@
             </div>
         </section>
         <section style="position: relative;">
+            <!-- TODO: SDF taxonomy: implicit function / lower-bound SDF / 1-Lipschitz SDF / Exact SDF-->
             <header><span>Signed distance fields</span></header>
 
             <p style="text-align: center;font-weight: 700; padding-bottom: 0">1-Lipschitz SDF</p>
@@ -546,13 +547,49 @@
             </div>
         </section>
         <section>
-            <header><span>Hierarchical pruning</span></header>
-        </section>
-        <section>
             <header><span>Far-field culling</span></header>
+            <p>Replace <b>pruned tree</b> with a <b>lower-bound distance</b> when far from the surface.</p>
+            <ul style='list-style-type: "⤷"; margin-top: 0; margin-left: 3%;'>
+                <li style="padding: 0.2em;">No evaluation cost, smaller memory usage (1 float)</li>
+                <li style="padding: 0.2em;">Conservative approximation 🡒 valid lower-bound SDF</li>
+                <li style="padding: 0.2em;">Loss of continuity: task-specific impact</li>
+            </ul>
+            <br/>
+            <div>
+                <img src="img/FarFieldComp.png" style="display: block; width: 35%; margin: auto;"/>
+            </div>
         </section>
         <section>
-            <header><span>Results</span></header>
+            <header><span>Hierarchical scheme</span></header>
+
+            <p style="text-align: center;font-weight: 600;">Coarse-to-fine pruning</p>
+            <div style="display: flex;align-items: center;">
+                <div style="flex: 1;">
+                    <img src="img/hierarchy.svg" style="width: 60%;display:block;margin:auto;"/>
+                </div>
+                <div style="flex: 1;">
+                    <img src="img/CullingRatioRacoon.svg" style="width: 80%; display: block; margin: auto;"/>
+                </div>
+            </div>
+        </section>
+        <section>
+            <header><span>Results: pruning speed</span></header>
+            <p>We measure <b>pruning time</b> and <b>sphere-tracing time</b> on a laptop RTX 4060.<br/>
+            Pruning is recomputed every frame from scratch.</p>
+            <p><b>Ours:</b><br/>
+                <span style="margin-left: 1em;">Pruning time: 14.3ms</span><br/>
+                <span style="margin-left: 1em;">Tracing time: 15.2ms</span></p>
+            <p><b>Baseline:</b><br/>
+                <span style="margin-left: 1em;">Tracing time: 9.4 seconds</span>
+            </p>
+            <p>TODO video</p>
+        </section>
+        <section>
+            <header><span>Results: pruning effectiveness</span></header>
+            <p></p>
+        </section>
+        <section>
+            <header><span>Results: speedup</span></header>
         </section>
     </body onclick="click();">
     <script>
