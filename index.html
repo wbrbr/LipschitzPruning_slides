@@ -544,17 +544,31 @@
             </div>
         </section>
         <section>
-            <header><span>Far-field culling</span></header>
+            <header><span>Pruning ratio</span></header>
 
             <div style="display: flex; width: 100%; height: 85%;justify-content: center; align-items: center;">
-                <img src="img/far_field_culling.svg" style="display: block; width: 90%;"/>
+                <img src="img/far_field_culling0.svg" style="display: block; width: 90%;"/>
+            </div>
+        </section>
+        <section>
+            <header><span>Pruning ratio</span></header>
+
+            <div style="display: flex; width: 100%; height: 85%;justify-content: center; align-items: center;">
+                <img src="img/far_field_culling1.svg" style="display: block; width: 90%;"/>
+            </div>
+        </section>
+        <section>
+            <header><span>Pruning ratio</span></header>
+
+            <div style="display: flex; width: 100%; height: 85%;justify-content: center; align-items: center;">
+                <img src="img/far_field_culling2.svg" style="display: block; width: 90%;"/>
             </div>
         </section>
         <section>
             <header><span>Far-field culling</span></header>
             <p>Replace <b>pruned tree</b> with a <b>lower-bound distance</b> when far from the surface.</p>
             <ul style='list-style-type: "⤷"; margin-top: 0; margin-left: 3%;'>
-                <li style="padding: 0.2em;">No evaluation cost, smaller memory usage (1 float)</li>
+                <li style="padding: 0.2em;">No evaluation cost, lower memory usage (1 float)</li>
                 <li style="padding: 0.2em;">Piecewise constant approximation <b>in the far-field</b></li>
                 <li style="padding: 0.2em;">Conservative approximation <img src='img/arrow.svg' style='width: 2em;padding-bottom: 0.1em;'/> valid lower-bound SDF, <b>same isosurface</b></li>
             </ul>
