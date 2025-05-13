@@ -444,36 +444,39 @@
 
             <p>\({\rm U{\small nion}}(f_1, f_2, k) = \min(f_1,f_2) - \underbrace{\phi(\lvert f_1-f_2 \rvert, k)}_{0 \text{ when } \lvert f_1-f_2 \rvert > k}\)</p>
             <p>How to know if \(\lvert f_1-f_2 \rvert > k\) within the cell? <b>Use the Lipschitz bound!</b></p>
+            <!--<p style="padding-bottom: 0;">Sufficient condition using \(\lVert \nabla f_1 \rVert, \lVert \nabla f_2 \rVert \le 1\): 
+            \[
+            \lvert f_1(\mathbf{p}) - f_2(\mathbf{p}) \rvert > k+2R \\[0.2em]
+            \big\Downarrow \\[0.2em]
+            \lvert f_1 - f_2 \rvert > k
+            \]</p>-->
             <img src="img/cell.svg" style="position: absolute; top: 50%; left: 75%;width: 20%;"/>
         </section>
-        <section style="position: relative;">
+        <!--<section style="position: relative;">
             <header><span>Lipschitz Pruning</span></header>
 
             <p>\({\rm U{\small nion}}(f_1, f_2, k) = \min(f_1,f_2) - \underbrace{\phi(\lvert f_1-f_2 \rvert, k)}_{0 \text{ when } \lvert f_1-f_2 \rvert > k}\)</p>
             <p>How to know if \(\lvert f_1-f_2 \rvert > k\) within the cell? <b>Use the Lipschitz bound!</b></p>
-            <!--<p>If \(\lvert f_1(\mathbf{p}) - f_2(\mathbf{p}) \rvert > k+2R\), then \(\lvert f_1-f_2\rvert > k\)</p>-->
             <p>Sufficient condition using \(\lVert \nabla f_1 \rVert, \lVert \nabla f_2 \rVert \le 1\): 
-            \[\begin{align*}
-                &\lvert f_1(\mathbf{p}) - f_2(\mathbf{p}) \rvert > k+2R \\
-                \implies &\lvert f_1 - f_2 \rvert > k \text{within the cell}
-            \end{align*}\]
             </p>
             <p style="display: none;"><b>Conservative</b> criterion using a <b>single</b> evaluation</p>
             <img src="img/cell.svg" style="position: absolute; top: 50%; left: 75%;width: 20%;"/>
-        </section>
+        </section>-->
         <section style="position: relative;">
             <header><span>Lipschitz Pruning</span></header>
 
             <p>\({\rm U{\small nion}}(f_1, f_2, k) = \min(f_1,f_2) - \underbrace{\phi(\lvert f_1-f_2 \rvert, k)}_{0 \text{ when } \lvert f_1-f_2 \rvert > k}\)</p>
             <p>How to know if \(\lvert f_1-f_2 \rvert > k\) within the cell? <b>Use the Lipschitz bound!</b></p>
             <!--<p>If \(\lvert f_1(\mathbf{p}) - f_2(\mathbf{p}) \rvert > k+2R\), then \(\lvert f_1-f_2\rvert > k\)</p>-->
-            <p>Sufficient condition using \(\lVert \nabla f_1 \rVert, \lVert \nabla f_2 \rVert \le 1\): \[\begin{align*}
-                &\lvert f_1(\mathbf{p}) - f_2(\mathbf{p}) \rvert > k+2R \\
-                &\implies \lvert f_1 - f_2 \rvert > k
-            \end{align*}\]
+            <p style="padding-bottom: 0;">Sufficient condition using \(\lVert \nabla f_1 \rVert, \lVert \nabla f_2 \rVert \le 1\): 
+            \[
+            \lvert f_1(\mathbf{p}) - f_2(\mathbf{p}) \rvert > k+2R \\[0.2em]
+            \big\Downarrow \\[0.2em]
+            \lvert f_1 - f_2 \rvert > k
+            \]
         </p>
             <img src="img/cell.svg" style="position: absolute; top: 50%; left: 75%;width: 20%;"/>
-            <p><b>Conservative</b> criterion using a <b>single</b> evaluation</p>
+            <p style="padding-top: 0;"><b>Conservative</b> criterion using a <b>single</b> evaluation</p>
         </section>
         <section style="position: relative;">
             <header><span>Pruned tree computation</span></header>
@@ -557,7 +560,7 @@
             </ul>
             <br/>
             <div>
-                <img src="img/FarFieldComp.png" style="display: block; width: 35%; margin: auto;"/>
+                <img src="img/FarFieldComp_flip.png" style="display: block; width: 35%; margin: auto;"/>
             </div>
         </section>
         <section>
