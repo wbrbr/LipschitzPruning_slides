@@ -8,36 +8,42 @@
         <script defer src="katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
     </head>
     <body id="body">
-        <section>
+        <section class="title-slide">
             <br/>
             <div style="font-size: 200%;top: 5%;text-align: center;margin-left: 5%; margin-right: 5%; margin-bottom: 3%;padding-left: 5%;padding-right: 5%;padding-top: 2%; padding-bottom: 2%;background-color: #c9daf8;"><span style="font-weight: 800">Lipschitz Pruning:</span><br/><span style="font-weight: 700">Hierarchical simplification of Primitive-Based SDFs</span>
             </div>
             <div style="display: flex; width: 90%; margin: auto;font-size: 120%;">
-                <div style="flex:1;text-align: center;">Wilhem Barbier*</div>
-                <div style="flex:1;text-align: center;">Mathieu Sanchez*</div>
+                <div style="flex:1;text-align: center;">Wilhem Barbier<sup>1,2</sup>*</div>
+                <div style="flex:1;text-align: center;">Mathieu Sanchez<sup>1</sup>*</div>
             </div>
             <br/>
             <div style="display: flex; width: 90%; margin: auto;font-size: 120%;">
-                <div style="flex:1;text-align: center;">Axel Paris</div>
-                <div style="flex:1;text-align: center;">Élie Michel</div>
-                <div style="flex:1;text-align: center;">Thibaud Lambert</div>
+                <div style="flex:1;text-align: center;">Axel Paris<sup>1</div>
+                <div style="flex:1;text-align: center;">Élie Michel<sup>1</sup></div>
+                <div style="flex:1;text-align: center;">Thibaud Lambert<sup>1</sup></div>
             </div>
             <br/>
             <div style="display: flex; width: 90%; margin: auto;font-size: 120%;">
-                <div style="flex:1;text-align: center;">Tamy Boubekeur</div>
-                <div style="flex:1;text-align: center;">Mathias Paulin</div>
-                <div style="flex:1;text-align: center;">Théo Thonat</div>
+                <div style="flex:1;text-align: center;">Tamy Boubekeur<sup>1</sup></div>
+                <div style="flex:1;text-align: center;">Mathias Paulin<sup>2</sup></div>
+                <div style="flex:1;text-align: center;">Théo Thonat<sup>1</sup></div>
             </div>
             <br/>
             <div style="display: flex;width: 100%;align-items: center;">
                 <div style="flex:1;">
-                    <img src="img/Adobe_Corporate_Logo.png" style="display: block;width: 60%; margin: auto"/>
+                    <div style="background-color: #f4f4f4; width: 60%; margin: auto; padding: 4%;padding-bottom: 2%; border-radius: 1vw;">
+                        <img src="img/Adobe_Corporate_Logo.png" style="display: block;width: 100%; margin: auto"/>
+                        <div style='text-align: center; width: 100%;'>1</div>
+                    </div>
                 </div>
                 <div style="flex:1;">
                     <p style="font-size: 75%;text-align: center;">* equal contribution</p>
                 </div>
                 <div style="flex:1;">
-                    <img src="img/IRIT_Logo.png" style="display: block;width: 30%;margin: auto;"/>
+                    <div style="background-color: #f4f4f4; width: 60%; margin: auto; padding: 4%; padding-bottom: 2%; padding-top: 2%;border-radius: 1vw;">
+                        <img src="img/IRIT_Logo.png" style="display: block;width: 35%;margin: auto;"/>
+                        <div style="text-align: center; width: 100%;margin-top: 1%;">2</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -227,6 +233,13 @@
         <section>
             <header><span>Smooth CSG tree</span></header>
 
+            <div style="display: flex;width: 100%;height: 85%;justify-content: center;align-items: center;">
+                <img src="img/csg_tree2.svg" style="display: block;width: 90%;"/>
+            <div>
+        </section>
+        <!--<section>
+            <header><span>Smooth CSG tree</span></header>
+
             <div style="position: relative;">
                 <svg viewBox="0 0 300 100" style="display: inline;position: absolute; width: 100%; height: 100%;">
                     <defs>
@@ -250,32 +263,17 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <section style="position: relative;">
             <header><span>Smooth CSG tree</span></header>
 
+            <div style="display: flex;width: 100%;height: 85%;justify-content: center;align-items: center;">
+                <img src="img/csg_tree2.svg" style="display: block;width: 90%;opacity: 0.1;"/>
+            <div>
             <div style="position: relative;opacity: 0.05;">
                 <svg viewBox="0 0 300 100" style="display: inline;position: absolute; width: 100%; height: 100%;">
-                    <defs>
-                        <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
-                            orient="auto-start-reverse">
-                            <path d="M 0 0 L 10 5 L 0 10 z" />
-                        </marker>
-                    </defs>
-                
-                    <path d="M 130 10 q 20 -20 40 0" stroke="black" stroke-width="1" marker-end="url(#arrow)" fill="transparent"/>
                 </svg>
 
-                <div style="display: flex;margin-top: 5%;">
-                    <div style="flex: 1;">
-                        <img src="img/csg_tree.png" style="width: 100%; margin: auto;"/>
-                        <p style="font-weight: 700;text-align: center;">Smooth CSG tree</p>
-                    </div>
-                    <div style="flex: 1;">
-                        <img src="img/guy.png" style="width: 60%; margin: auto;display: block;"/>
-                        <p style="font-weight: 700; text-align: center;">Shape</p>
-                    </div>
-                </div>
             </div>
 
             <div style="position: absolute; top: 25%; left:25%; font-weight: 700; font-size: 125%; width: 75%;">
@@ -284,8 +282,9 @@
                 <p style="display: flex;"><img src="img/checkmark.svg" style="width:4%;margin-right: 2%;"/> <span>No explicit topology</span></p>
                 <p style="display: flex;"><img src="img/cross.svg" style="width:4%;margin-right: 2%;"/> <span>Slow to evaluate</span></p>
             </div>
+
         </section>
-        <section>
+        <!--<section>
             <header><span>Previous works</span></header>
 
             <table style="width: 90%;margin-left: 5%;margin-right: 5%;">
@@ -294,7 +293,6 @@
                         <th></th>
                         <th>Arbitrary tree<br>topology</th>
                         <th>Low<br>overhead</th>
-                        <!--<th>Compatible with<br>existing kernels</th>-->
                         <th>Compat. with prev.<br/> blending kernels</th>
                     </tr>
                 </thead>
@@ -325,7 +323,7 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        </section>-->
         <section>
             <header><span>Previous works</span></header>
 
@@ -558,30 +556,6 @@
                 </div>
             </div>
         </section>
-        <section style="position: relative;">
-            <header><span>Results: pruning speed</span></header>
-            <p>We measure <b>pruning time</b> and <b>sphere-tracing time</b> on a laptop RTX 4060.<br/>
-            Pruning is recomputed every frame from scratch.</p>
-            <p><b>Ours:</b><br/>
-                <span style="margin-left: 1em;">Pruning time: 14.3ms</span><br/>
-                <span style="margin-left: 1em;">Tracing time: 15.2ms</span></p>
-            <p><b>Baseline:</b><br/>
-                <span style="margin-left: 1em;">Tracing time: 9.4 seconds</span>
-            </p>
-            <div style="position: absolute;left: 50%; top: 40%;width: 40%;">
-                <video style="width: 100%;" autoplay loop muted id="pruning-vid">
-                    <source src="LipschitzPruningVideo.mp4#t=7" type="video/mp4"/>
-                </video>
-            </div>
-            <script>
-                let elem = document.getElementById('pruning-vid');
-                elem.addEventListener('timeupdate', () => {
-                    if (elem.currentTime >= 17) {
-                        elem.currentTime = 7;
-                    }
-                });
-            </script>
-        </section>
         <section>
             <header><span>Results: pruning effectiveness</span></header>
             <div style="display:grid;width: 100%; height: 83%;grid-template-columns: 50% 50%; grid-template-rows: 50% 50%;margin-top: 1%;">
@@ -633,6 +607,30 @@
                 vid3.addEventListener('timeupdate', () => {
                     if (vid3.currentTime >= 104) {
                         vid3.currentTime = 97;
+                    }
+                });
+            </script>
+        </section>
+        <section style="position: relative;">
+            <header><span>Results: pruning speed</span></header>
+            <p>We measure <b>pruning time</b> and <b>sphere-tracing time</b> on a laptop RTX 4060.<br/>
+            Pruning is recomputed every frame from scratch.</p>
+            <p><b>Ours:</b><br/>
+                <span style="margin-left: 1em;">Pruning time: 14.3ms</span><br/>
+                <span style="margin-left: 1em;">Tracing time: 15.2ms</span></p>
+            <p><b>Baseline:</b><br/>
+                <span style="margin-left: 1em;">Tracing time: 9.4 seconds</span>
+            </p>
+            <div style="position: absolute;left: 35%; top: 30%;width: 60%;">
+                <video style="width: 100%;" autoplay loop muted id="pruning-vid">
+                    <source src="LipschitzPruningVideo.mp4#t=7" type="video/mp4"/>
+                </video>
+            </div>
+            <script>
+                let elem = document.getElementById('pruning-vid');
+                elem.addEventListener('timeupdate', () => {
+                    if (elem.currentTime >= 17) {
+                        elem.currentTime = 7;
                     }
                 });
             </script>
