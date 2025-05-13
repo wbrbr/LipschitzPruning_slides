@@ -452,7 +452,13 @@
             <p>\({\rm U{\small nion}}(f_1, f_2, k) = \min(f_1,f_2) - \underbrace{\phi(\lvert f_1-f_2 \rvert, k)}_{0 \text{ when } \lvert f_1-f_2 \rvert > k}\)</p>
             <p>How to know if \(\lvert f_1-f_2 \rvert > k\) within the cell? <b>Use the Lipschitz bound!</b></p>
             <!--<p>If \(\lvert f_1(\mathbf{p}) - f_2(\mathbf{p}) \rvert > k+2R\), then \(\lvert f_1-f_2\rvert > k\)</p>-->
-            <p>Sufficient condition using \(\lVert \nabla f_1 \rVert, \lVert \nabla f_2 \rVert \le 1\): \[\lvert f_1(\mathbf{p}) - f_2(\mathbf{p}) \rvert > k+2R\]</p>
+            <p>Sufficient condition using \(\lVert \nabla f_1 \rVert, \lVert \nabla f_2 \rVert \le 1\): 
+            \[\begin{align*}
+                &\lvert f_1(\mathbf{p}) - f_2(\mathbf{p}) \rvert > k+2R \\
+                \implies &\lvert f_1 - f_2 \rvert > k \text{within the cell}
+            \end{align*}\]
+            </p>
+            <p style="display: none;"><b>Conservative</b> criterion using a <b>single</b> evaluation</p>
             <img src="img/cell.svg" style="position: absolute; top: 50%; left: 75%;width: 20%;"/>
         </section>
         <section style="position: relative;">
@@ -461,7 +467,11 @@
             <p>\({\rm U{\small nion}}(f_1, f_2, k) = \min(f_1,f_2) - \underbrace{\phi(\lvert f_1-f_2 \rvert, k)}_{0 \text{ when } \lvert f_1-f_2 \rvert > k}\)</p>
             <p>How to know if \(\lvert f_1-f_2 \rvert > k\) within the cell? <b>Use the Lipschitz bound!</b></p>
             <!--<p>If \(\lvert f_1(\mathbf{p}) - f_2(\mathbf{p}) \rvert > k+2R\), then \(\lvert f_1-f_2\rvert > k\)</p>-->
-            <p>Sufficient condition using \(\lVert \nabla f_1 \rVert, \lVert \nabla f_2 \rVert \le 1\): \[\lvert f_1(\mathbf{p}) - f_2(\mathbf{p}) \rvert > k+2R\]</p>
+            <p>Sufficient condition using \(\lVert \nabla f_1 \rVert, \lVert \nabla f_2 \rVert \le 1\): \[\begin{align*}
+                &\lvert f_1(\mathbf{p}) - f_2(\mathbf{p}) \rvert > k+2R \\
+                &\implies \lvert f_1 - f_2 \rvert > k
+            \end{align*}\]
+        </p>
             <img src="img/cell.svg" style="position: absolute; top: 50%; left: 75%;width: 20%;"/>
             <p><b>Conservative</b> criterion using a <b>single</b> evaluation</p>
         </section>
